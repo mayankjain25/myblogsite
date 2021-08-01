@@ -1,0 +1,112 @@
+<%- include("partials/header.ejs"); -%>
+<body>
+    <section id="hero">
+        
+
+        <div class="landing-section">
+
+            <div class="landing-text-content">
+                <h1 class="">New blogs, everyday!</h1>
+                <p>Choose a category to read from, 
+                   <br>and enjoy your daily dose of freshly baked blogs
+                </p>
+                <a href="#" class="get-started"><button>Get Started</button></a>
+            </div>
+
+            <div class="landing-svg-container">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_fGseie.json"  background="transparent"  speed="1.25"  style="width: 400px; height: 500px;"  loop  autoplay></lottie-player>
+            </div>
+            
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ec615c" fill-opacity="0.9" d="M0,224L60,197.3C120,171,240,117,360,117.3C480,117,600,171,720,176C840,181,960,139,1080,122.7C1200,107,1320,117,1380,122.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+
+    <section class="" id="blog-previews">
+        <h1 class="section-heading">Read latest stories</h1>
+        <div class="blog-preview-container">
+            <div class="active-blog">
+                
+                <h1><%= blogs[blogs.length - 1].title%></h1>
+                <div class="blog-author">
+                    <h3><i class="fas fa-user icon-author"></i></i><%=blogs[blogs.length -1].author%></h3>
+                </div>
+                <a href="/posts/<%= blogs[blogs.length - 1].title%>"><button>Read</button></a>
+            </div>
+            <div class="other-two">
+                <div class="post-1">
+                    
+                    <h1><%= blogs[blogs.length - 2].title%></h1>
+                <p >
+                    
+                   
+                 </p>
+                 <div class="blog-author">
+                     <h3><i class="fas fa-user icon-author"></i></i><%=blogs[blogs.length -2].author%></h3>
+                </div>
+                    <a href=""><button>Read</button></a>
+                </div>
+                <div class="post-2">
+                    <h1><%= blogs[blogs.length - 3].title%></h1>
+                    <p >
+                       
+                     </p>
+                <div class="blog-author">
+                    <h3><i class="fas fa-user icon-author"></i></i><%=blogs[blogs.length -3].author%></h3>
+                </div>
+                <a href="/posts/<%= blogs[blogs.length - 1].title%>"><button>Read</button></a>
+                </div>
+            </div>
+        </div>
+        
+            
+            
+    </section>
+
+    <section id="top-authors">
+        <h1>Top writers of the month</h1>
+        <div class="top-authors">
+            <div class="author-card">
+                <img src="man.png" alt="" class="author-img">
+                <div class="info">
+                    <h3><i class="fas fa-user icon-author"></i></i>Mayank Jain</h3>
+                    <p><i class="fas fa-trophy icon-author"></i>12 Articles</p>
+                    <p><i class="fas fa-user-clock icon-author"></i>Active since: 2020</p>
+                </div>
+                
+    
+            </div>
+    
+            <div class="author-card">
+                <img src="man.png" alt="" class="author-img">
+                <div class="info">
+                    <h3><i class="fas fa-user icon-author"></i></i>Mayank Jain</h3>
+                    <p><i class="fas fa-trophy icon-author"></i>12 Articles</p>
+                    <p><i class="fas fa-user-clock icon-author"></i>Active since: 2020</p>
+                </div>
+                
+    
+            </div>
+    
+    
+            <div class="author-card">
+                <img src="man.png" alt="" class="author-img">
+                <div class="info">
+                    <h3><i class="fas fa-user icon-author"></i></i>Mayank Jain</h3>
+                    <p><i class="fas fa-trophy icon-author"></i>12 Articles</p>
+                    <p><i class="fas fa-user-clock icon-author"></i>Active since: 2020</p>
+                </div>
+                
+    
+            </div>
+    
+        </div>
+        
+    </section>
+
+    <%- include("partials/footer.ejs"); -%>
+
+    
+    
+</body>
+</html>

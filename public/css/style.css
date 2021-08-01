@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Josefin+Sans:wght@600&family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=STIX+Two+Text:wght@500&display=swap');
+:root{
+    --atkinson: 'Atkinson Hyperlegible', sans-serif;
+    --windsong: 'WindSong', cursive;
+    --josefin: 'Josefin Sans', sans-serif;
+    --blogHeadingFont2: 'STIX Two Text', serif;
+    --blogHeadingFont:'Crimson Text', serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-brand{
+    font-family:var(--josefin);
+    font-size:25px;
+    
+}
+
+.nav-item{
+    font-family: var(--atkinson);
+    font-size:20px;
+    transition: ease 0.5s;
+    
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+    color:#ec615c;
+    text-decoration-color: #ec615c;
+    cursor:pointer;
+}
+
+.landing-section{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landing-text-content{
+    font-family: var(--atkinson);
+    position: relative;
+}
+
+.landing-text-content h1{
+    font-size: 40px;
+    font-family: var(--josefin);
+    color:#ec615c;
+}
+
+.landing-text-content p{
+   font-size: 20px;
+}
+
+button{
+
+    margin-top: 20px;
+    padding: 5px;
+    width:fit-content;
+    background-color: transparent;
+    border: 2px solid #ec615c;
+    text-align: center;
+    font-family: var(--atkinson);
+    font-weight: bold;
+    font-size: 20px;
+    transition:ease-in 0.25s;
+}
+
+button:hover{
+    cursor:pointer;
+    border:2px solid #000;
+    background-color: #ec615c;
+}
+
+#top-authors{
+    
+    text-align: center;
+    padding: 20px;
+    font-family: var(--atkinson);
+    
+    
+}
+.top-authors{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--josefin);
+}
+
+#top-authors h1{
+    font-size: 2.5rem;
+    font-family: var(--josefin);
+}
+
+.top-authors img{
+    border:0.5px solid black;
+    border-radius: 100%;
+    padding-top: 5px;
+}
+.author-card{
+    text-align: center;
+    line-height: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding:40px;
+    margin-top: 20px;
+    background-color: rgb(236,97,92,0.7);
+    box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+    -webkit-box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+    -moz-box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+    
+}
+
+.author-img{
+    width:50px;
+    background-color: #fff;
+}
+
+.info{
+    /* background-color: white; */
+    margin-top:50px;
+    text-align: left;
+}
+
+.icon-author{
+    margin: 5px;
+    padding-right: 10px;
+    
+}
+
+#footer{
+    text-align:left;
+    
+    padding-top:30px;
+    font-family: var(--josefin);
+    background-color: #1d2b36;
+    color:#fff;
+    
+}
+
+.footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+#footer .company-logo h2{
+    color:#ec615c;
+    font-size:2.5rem;
+    
+}
+
+#footer h2{
+    font-size:2.5rem;
+}
+#footer ul{
+    /* list-style: none; */
+    list-style-type: none;
+    padding-left: 0;
+    color:#b1c5ca;
+    font-weight: 0;
+    
+}
+
+#footer ul li{
+    padding:7px 0px;
+    font-size:1.25rem;
+}
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+.made-with-love{
+    /* display: block; */
+    border-top:1px solid #779097;
+    border-spacing: 50px;
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+}
+
+.made-with-love h3{
+    font-size:1.10rem;
+    color:#b1c5ca;
+    /* font-family: var(--atkinson); */
+}
+
+#blog-previews .section-heading{
+    text-align: center;
+    font-family: var(--josefin);
+    font-size:2.5rem;
+}
+.blog-preview-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+}
+
+.active-blog{
+    border:1px solid #000;
+    border-radius:6px;
+    margin:10px;
+    padding:16px;
+    flex-grow:0.5;
+    box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+    -webkit-box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+    -moz-box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+}
+#blog-previews h1{
+    font-family: var(--blogHeadingFont);
+    font-size:30px;
+}
+
+.blog-author{
+    font-family: var(--blogHeadingFont);
+    font-size:0.75rem;
+}
+
+.post-1,.post-2{
+    border:1px solid #000;
+    border-radius:6px;
+    margin:10px;
+    padding:16px;
+    box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+    -webkit-box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+    -moz-box-shadow: 1px 7px 15px -3px rgba(125,96,96,0.75);
+}
+
+.active-blog:hover{
+    box-shadow: -3px -2px 11px 0px rgba(236,97,92,0.75);
+-webkit-box-shadow: -3px -2px 11px 0px rgba(236,97,92,0.75);
+-moz-box-shadow: -3px -2px 11px 0px rgba(236,97,92,0.75);
+}
+
+.post-1:hover,.post-2:hover{
+    box-shadow: 1px -2px 11px 0px rgba(236,97,92,0.75);
+-webkit-box-shadow: 1px -2px 11px 0px rgba(236,97,92,0.75);
+-moz-box-shadow: 1px -2px 11px 0px rgba(236,97,92,0.75);
+}

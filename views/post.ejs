@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs"); -%>
+<style>
+    h1{
+        font-family: var(--blogHeadingFont);
+    }
+    p{
+        font-family: var(--atkinson);
+    }
+    .post-container{
+        padding: 50px;
+    }
+</style>
+<body>
+    <div class="post-container">
+        <h3><i class="fas fa-user icon-author"></i><%= postAuthor%></h3>
+        <h1><%= postTitle %></h1>
+        <p id="0110"><%= postContent %></p>
+    </div>
+    
+</body>
+<%- include("partials/footer.ejs"); -%>

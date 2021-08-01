@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs"); -%>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    
+    .heading{
+        font-family: var(--josefin);
+        text-align: center;
+    }
+    .compose-container{
+        padding:50px;
+    }
+
+    .submit-btn{
+        margin: 30px;
+        margin-left:0px;
+    }
+
+    .post-content{
+        white-space: pre-wrap;
+    }
+</style>
+
+<body>
+    <div class="compose-container">
+        <h1 class="heading">Your exciting story is waiting to get published!</h1>
+        <form action="" method="POST">
+            <div class="mb-3">
+                
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title" name="title">
+            </div>
+            <div class="mb-3">
+                
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" name="author">
+            </div>
+            <div class="input-group">
+                <textarea id="blog-post" style="white-space: pre-wrap;" class="form-control post-content" aria-label="With textarea" name="post" placeholder="Unleash your creativity" rows="10" columns="10"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark submit-btn">Publish</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+</body>
+
+<%- include("partials/footer.ejs"); -%>
